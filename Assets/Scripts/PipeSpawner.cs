@@ -43,8 +43,6 @@ public class PipeSpawner : MonoBehaviour
         float highestPipePoint = transform.position.y + heightOffset;
 
         var pipePosition = new Vector3(transform.position.x, Random.Range(lowestPipePoint, highestPipePoint));
-        Debug.Log("pipePosition " + pipePosition);
-
 
         // we're instantiating the pipe itself, in the same position, and in the same rotation
         Instantiate(pipe, pipePosition, transform.rotation);
