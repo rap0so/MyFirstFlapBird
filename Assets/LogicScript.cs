@@ -24,6 +24,7 @@ public class LogicScript : MonoBehaviour
     // This text here is only possible because we imported UnityEngine.SceneManagement on line 5
     public void restartGame()
     {
+        Time.timeScale = 1;
         var currentSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(currentSceneName);
     }

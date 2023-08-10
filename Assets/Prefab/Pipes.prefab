@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed21f919a8f634cadaf0d6c3166b0342, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  logicScriptClass: {fileID: 0}
 --- !u!1 &6752593734038350076
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +363,7 @@ GameObject:
   - component: {fileID: 3097344925267871877}
   m_Layer: 0
   m_Name: Pipes
-  m_TagString: Untagged
+  m_TagString: GameOverTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -398,3 +399,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  stopMove: 0
