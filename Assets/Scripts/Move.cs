@@ -25,7 +25,6 @@ public class Move : MonoBehaviour
     {
         moveSpeed = moveSpeed + (Time.time / 10000);
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
-        Debug.Log(moveSpeed);
     }
 
     void RemovePipes()
