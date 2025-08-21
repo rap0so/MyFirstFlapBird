@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    public float moveSpeed = 5;
+    public float moveSpeed = 20;
     float deadZone = -20;
 
     // Start is called before the first frame update
@@ -23,7 +23,9 @@ public class Move : MonoBehaviour
 
     void MovePipes()
     {
+        moveSpeed = moveSpeed + (Time.time / 10000);
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
+        Debug.Log(moveSpeed);
     }
 
     void RemovePipes()
