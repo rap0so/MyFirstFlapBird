@@ -515,7 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 8468015024769673858, guid: 5a9d0c07d51aa4d2f91e9c670daff1fa, type: 3}
-  spawnRate: 1
+  spawnRate: 0.5
   heightOffset: 4
 --- !u!4 &596999799
 Transform:
@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 759704044}
   - component: {fileID: 759704046}
   - component: {fileID: 759704045}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,7 +624,7 @@ GameObject:
   - component: {fileID: 828049762}
   - component: {fileID: 828049761}
   - component: {fileID: 828049760}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Restart Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -757,7 +757,7 @@ GameObject:
   - component: {fileID: 877920804}
   - component: {fileID: 877920806}
   - component: {fileID: 877920805}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -974,6 +974,7 @@ GameObject:
   - component: {fileID: 1495784705}
   - component: {fileID: 1495784704}
   - component: {fileID: 1495784708}
+  - component: {fileID: 1495784709}
   m_Layer: 0
   m_Name: Start Screen
   m_TagString: Untagged
@@ -1056,11 +1057,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1469694178}
   - {fileID: 403302735}
   - {fileID: 276615104}
-  - {fileID: 1469694178}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1079,6 +1080,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &1495784709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495784703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53416d9ae5d3e4a539e50efe31dd99fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1568829185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,7 +1171,7 @@ GameObject:
   - component: {fileID: 1644846680}
   - component: {fileID: 1644846682}
   - component: {fileID: 1644846681}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1236,7 +1249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1652612807}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Game Over Screen
   m_TagString: GameOverTag
   m_Icon: {fileID: 0}
@@ -1277,7 +1290,7 @@ GameObject:
   - component: {fileID: 1729336345}
   - component: {fileID: 1729336344}
   - component: {fileID: 1729336343}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1362,7 +1375,7 @@ RectTransform:
   - {fileID: 759704044}
   - {fileID: 1652612807}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1383,7 +1396,7 @@ GameObject:
   - component: {fileID: 1761749992}
   - component: {fileID: 1761749996}
   - component: {fileID: 1761749997}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1415,7 +1428,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &1761749993
 CircleCollider2D:

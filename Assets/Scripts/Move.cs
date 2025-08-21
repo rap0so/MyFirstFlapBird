@@ -23,7 +23,7 @@ public class Move : MonoBehaviour
 
     void MovePipes()
     {
-        moveSpeed = moveSpeed + (Time.time / 10000);
+        moveSpeed = moveSpeed + (Time.time / 12000);
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
     }
 
